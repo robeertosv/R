@@ -29,5 +29,10 @@ datos[2,2] > datos[5,2]
 
 # e) Calcular la media del pulso de los hombres
 
-pulsoHombres = c(datos[1,3], datos[3,3], datos[4,3])
+pulsoHombres = datos[1,3] + datos[3,3] + datos[4,3]
+
 mean(pulsoHombres)
+
+# Obtener la raíz cuadrada de la tensión arterial del cuarto individuo
+
+sqrt(datos[4, 2])
