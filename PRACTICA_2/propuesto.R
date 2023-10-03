@@ -25,4 +25,27 @@ dt_b = sqrt(var_b)
 
 dt_b
 
-min(RegA$diametrosA)
+min(RegA$diametroA)
+quantile(datosB$alturaB, probs = c(0.75))
+
+media_volumenA = mean(datosA$volumenA, na.rm=TRUE)
+var_volumenA = 9/10 * var(datosA$volumenA, na.rm=TRUE)
+dt_volumenA = sqrt(var_volumenA)
+cv_volumenA = dt_volumenA / media_volumenA
+
+media_volumenB = mean(datosB$volumenB, na.rm=TRUE)
+var_volumenB = 9/10 * var(datosB$volumenB, na.rm=TRUE)
+dt_volumenB = sqrt(var_volumenB)
+cv_volumenB = dt_volumenB / media_volumenB
+
+media_alturaA = mean(datosA$alturaA, na.rm=TRUE)
+media_alturaB = mean(datosB$alturaB, na.rm=TRUE)
+
+media_alturaA
+media_alturaB
+
+medianaAA = median(datosA$alturaA, na.rm=TRUE)
+medianaBB = median(datosB$alturaB, na.rm=TRUE)
+
+medianaAA
+medianaBB
