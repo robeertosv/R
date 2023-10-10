@@ -1,0 +1,5 @@
+setwd("D:/UAH/R/EP_2_1")
+data = read.csv2("var1.csv", header=TRUE, sep=",")
+freq = table(data$Puntuaciones)
+notas=table(cut(data$Puntuaciones, breaks=c(0,5,10,15,20,25, 30,35,40,45)))
+hist(notas, main="Histograma", xlab="Notas", ylab="Frecuencia")
