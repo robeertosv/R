@@ -1,0 +1,5 @@
+setwd("D:/UAH/R/EP_2_1")
+dataA = read.table("regionA.txt", header=TRUE, sep="", dec=".")
+frecuencias = table(dataA$Variedad)
+pie(frecuencias, labels=c("Blanco", "Amarillo", "Rosa"), main="Diagrama de sectores", col=c("white", "yellow", "pink"))
+hist(dataA$Altura, col="green", main="Histograma de alturas", xlab="Altura", ylab="Frecuencia")
