@@ -1,0 +1,7 @@
+setwd("D:/UAH/R/EG_1_2")
+datos = read.table("datos.txt", header=TRUE)
+absol_raza = table(datos$Raza)
+barplot(absol_raza, col=c("red", "blue"), main="Diagrama de barras para la variable raza")
+pie(absol_raza, col=c("white", "black"), main="Diagrama de sectores")
+hist(datos$Edad, col="green", main="Histograma para edad", xlab="Edades", ylab="frecuencia")
+boxplot(datos$Edad, main="Cajas y bigotes", range=1.5)
