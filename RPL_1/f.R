@@ -8,3 +8,5 @@ edadesB = grupoB$Edad
 
 hist(edadesA, breaks=c(10, 15, 20, 25, 30, 35), main="Edades agrupadas", xlab="Edades agrupadas")
 hist(edadesB, breaks=c(10, 15, 20, 25, 30, 35), main="Edades agrupadas", xlab="Edades agrupadas")
+
+
